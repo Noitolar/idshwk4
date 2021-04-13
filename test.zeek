@@ -61,9 +61,9 @@ event init()
 			local result_404_unique = result["404-URI"];
 			if (result_404_sum$sum > 2)
 			{
-				if (result_404_sum$sum/result_res_code_sum$sum > 0.2)
+				if (1.0 * result_404_sum$sum/result_res_code_sum$sum > 0.2)
 				{
-					if (result_404_unique$unique/result_404_sum$sum > 0.5)
+					if (1.0 * result_404_unique$unique/result_404_sum$sum > 0.5)
 					{
 						print fmt(" %s is a scanner with %.0f scan attemps on %d urls", key$host, result_404_sum$sum, result_404_unique$unique);
 					}
