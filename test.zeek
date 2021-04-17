@@ -47,7 +47,7 @@ event zeek_init()
 	
 	SumStats::create([
 		$name="IDSHWK_04_RESULT", 
-		$epoch=10mins, 
+		$epoch=10min, 
 		$reducers=set
 		(
 			reducer_res_code_sum, 
