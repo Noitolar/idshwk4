@@ -25,7 +25,7 @@ event http_reply(c: connection, version: string, code: count, reason: string)
 	}
 }
 
-event init()
+event zeek_init()
 {
 	local reducer_res_code_sum = SumStats::Reducer
 	(
